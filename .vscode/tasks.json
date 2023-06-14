@@ -7,7 +7,12 @@
             "targetTasks": [
                 "Start App (Script)"
             ],
-            "file": "${input:dotEnvFilePath}"
+            "file": "${input:dotEnvFilePath}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
         },
         {
             "label": "Start App (Script)",

@@ -8,14 +8,25 @@
     },
     "features": {
         "ghcr.io/devcontainers/features/python:1": {
-            "version": "os-provided"
-        },
+			"installTools": true,
+			"version": "latest"
+		},
         "ghcr.io/devcontainers/features/node:1": {
-            "version": "16",
-            "nodeGypDependencies": false
-        },
+			"nodeGypDependencies": true,
+			"version": "lts"
+		},
         "ghcr.io/devcontainers/features/powershell:1.1.0": {},
-        "ghcr.io/devcontainers/features/azure-cli:1.0.8": {}
+		"ghcr.io/devcontainers/features/azure-cli:1.0.8": {},
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/dotnet:1": {
+			"installUsingApt": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/powershell:1": {
+			"version": "latest"
+		}
     },
     "customizations": {
         "vscode": {
